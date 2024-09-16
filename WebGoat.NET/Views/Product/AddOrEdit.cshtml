@@ -19,7 +19,6 @@
             #pragma warning disable CS8602 // False positive, cannot happen in template usage
             Html.HiddenFor(m => m.Product.ProductId);
             Html.HiddenFor(m => m.Product.SupplierId);
-            #pragma warning restore CS8602
             <p>
                 @{ #pragma warning disable CS8602 } <!-- False positive, cannot happen in template usage -->
                 @Html.LabelFor(m => m.Product.ProductId)
